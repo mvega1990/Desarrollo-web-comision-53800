@@ -87,11 +87,59 @@ main{
     padding: 20px;
     margin-bottom: 20px;
 }
+.TituloMarcas h1{
+    text-align: center;
+    padding: 50px;
+    font-size: 50px;
+    font-family: "Cinzel", serif; 
+    text-decoration: underline;
+}
+.content_marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.imgmarca img{
+    height: 120px;
+    width: 100%;
+    
+}
+.cajamarca{
+    width: 130px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.verprod a{
+    height:42px;
+    background-color: rgb(11, 11, 129);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.verprod a:hover{
+    background-color: rgb(29, 29, 50);
+    text-decoration: underline;
+}
+
 /* TEMINA MAIN */
 /* INICIA MARCAS */
 .NuestrasMarcas{
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+}
+.NuestrasMarcas h1{
+    font-family: "Cinzel", serif ;
+    font-size: 50px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    text-decoration: underline;
 }
 .sec{
 width: 50%;
@@ -142,4 +190,17 @@ footer h1{
     text-decoration: underline;
 }
 /* TERMINA FOOTER */
+
+.whatsapp{
+    font-size: 50px;
+    color: black;
+    position: fixed;
+    top: 110px;
+    right: 30px;
+    text-shadow: 0 0 10px white;
+}
+
+.marcas img{
+    width: 150px;
+}
 
