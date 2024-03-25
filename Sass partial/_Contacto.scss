@@ -1,0 +1,28 @@
+
+.contactar {
+	 margin-top: 50px;
+	 margin-bottom: 50px;
+	padding: 30px;
+	background-image: linear-gradient(to top left, black, rgb( 86, 184, 218));
+	
+
+    h1 {
+		padding-bottom: 20px;
+		margin-bottom: 0;
+		padding-left: 0;
+		text-decoration: underline;
+	}
+
+}
+
+@mixin position ($display, $posicionamiento, $padding-bottom){
+    display:$display;
+    justify-content: $posicionamiento;
+    padding-bottom: $padding-bottom;
+}
+.boton {
+    @include position (flex, center, 30px)}
+// 	display: flex;
+// 	justify-content: center;
+// 	padding-bottom: 30px;
+// }
