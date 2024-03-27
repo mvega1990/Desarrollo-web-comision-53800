@@ -4,7 +4,7 @@
   font-weight: 600;
   font-style: normal; */
 .NuestraEmpresa {
-  height: 100vh;
+  height: 800px;
   background-image: url(img/screw-4929711_1280.jpg);
   background-size: cover;
   background-position: center;
@@ -26,6 +26,11 @@
   font-size: 15px;
 }
 
+@media only screen and (max-width: 767px) {
+  .NuestraEmpresa {
+    background-position: left;
+  }
+}
 .TituloMarcas h1 {
   text-align: center;
   padding: 50px;
@@ -74,6 +79,7 @@
 }
 
 .contactar, .IngresarCliente {
+  box-sizing: border-box;
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 30px;
@@ -92,6 +98,14 @@
   padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 767px) {
+  .contactar, .IngresarCliente {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 .boton2 {
   display: flex;
   justify-content: flex-end;
@@ -138,6 +152,17 @@
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 560px) {
+  .form-control2,
+  .btn2 {
+    display: none;
+  }
+  .texto,
+  .Registrarse {
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
 /* EMPIEZA NAVBAR */
 .navbar {
   background-color: rgb(86, 184, 218);
@@ -333,7 +358,7 @@ footer h1 {
   font-size: 50px;
   color: black;
   position: fixed;
-  top: 130px;
+  top: 180px;
   right: 30px;
   text-shadow: 0 0 10px white;
 }/*# sourceMappingURL=estilos.css.map */
