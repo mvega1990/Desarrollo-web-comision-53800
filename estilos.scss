@@ -129,9 +129,6 @@ $color4: black;
 
 }
 
-/*fin anidacion navbar*/
-
-
 /* TERMINA NAVBAR */
 
 /* Empieza Main */
@@ -139,6 +136,7 @@ main {
 	height: auto;
 	background-color: $color3;
 	font-family: "Cinzel", serif;
+	padding: 0 !important;
 
 	p {
 		font-family: Verdana, Geneva, Tahoma, sans-serif
@@ -146,76 +144,93 @@ main {
 }
 
 /* MAIN INDEX */
-
+#carouselExampleFade {
+	padding: 0 !important;
+}
+.banner2 {
+	height: calc(100vh - 100px);
+	background-image: url(img/pexels-photo-8985451.jpeg);
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+}
+.banner3 {
+	@extend .banner2;
+	background-image: url(img/screw-4929715_1280.jpg);
+}
+.banner4 {
+	@extend .banner2;
+	background-image: url(img/tools-4088531_960_720.jpg);
+}
 .banner {
 	height: auto;
-	border: 5px solid $color4;
-	border-top: none;
+	width: fit-content;
+	background-color: rgba(244, 241, 241, 0.633);
+	border: 3px solid $color4;
 	font-family: "Cinzel", serif;
 	font-optical-sizing: auto;
 	font-weight: 600;
 	font-style: normal;
-	padding: 20px;
-
+	padding: 30px;
+	margin: 30px;
 	h1 {
-		font-size: 40px;
+		font-size: 25px;
+		margin: 0;
+		margin-bottom: 15px;
+		text-decoration: underline;
 	}
-
 	h2 {
 		font-size: 50px;
 		text-shadow: 0 0 10px $color2;
 	}
-
 	p {
 		margin-bottom: 20px;
 	}
-
 	a {
 		text-decoration: none;
-		color: $color4;
+		color: black;
 		background-color: $color1;
 		padding: 10px 20px;
 		display: flex;
+		width: -moz-fit-content;
 		width: fit-content;
 		border-radius: 5px;
-
 		&:hover {
 			text-decoration: underline;
 			color: $color2;
 		}
 	}
 }
-
-.imagenPrincipal {
-	padding: 0;
-
-	img {
-		width: 100%;
-	}
-}
+  @media only screen and (max-width:500px){
+    .banner h2{
+      font-size: 35px;
+    }
+    .banner2,.banner3,.banner4{
+      height: auto;
+    }
+  }
 
 .descripcion {
-	text-align: center;
+	text-align: left;
 	padding: 20px;
 	margin-top: 20px;
 
 	h2 {
+		padding-left: 50px;
+		margin-top: 20px;
 		text-decoration: underline;
 	}
-
+	i{
+		color: $color1;
+	}
+	
 	p {
 		padding-left: 50px;
 		padding-right: 50px;
-		text-align: justify;
+		text-align: left;
 	}
 }
 
-
-@media only screen and (max-width: 1094px) {
-	.banner h2 {
-		font-size: 30px
-	}
-}
 
 /* FIN MAIN INDEX */
 
